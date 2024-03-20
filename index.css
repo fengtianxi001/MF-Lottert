@@ -1,0 +1,82 @@
+@font-face {
+    font-family: salt;
+    src: url("./font.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: salt;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #282b30;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.page .header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.body,.footer{
+    border-radius: 20px;
+    background-color: #3f4246;
+    box-sizing: border-box;
+    overflow: hidden;
+    background:linear-gradient(135deg,#707377,#2a2d31);
+    margin-bottom: 20px;
+}
+
+
+.body-title{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:18px;
+    color: #fff;
+    margin-top: 10px;
+    
+}
+
+.body-title:active{
+    color:#fe6e1c;
+    
+}
+.body-items{
+    box-sizing: border-box;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,50px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+.body-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #999;
+    background:linear-gradient(-45deg,#999,#777);
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.body-item.active{
+    background:linear-gradient(45deg,#fac026,#fe6e1c);
+    border-color: #fac026;
+    box-shadow: 0 6px 22px #fe6e1c99;
+}
